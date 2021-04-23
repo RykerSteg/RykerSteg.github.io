@@ -4,9 +4,13 @@ h1{
     text-align:center;
     font-size:42pt;
     border: solid black 4px;
-
+    border-radius:25px;
 }
 h3{
-    border-bottom:black 4px solid;
+    border-bottom:black 2px solid;
 }
-
+footer{
+    border-radius:25px;
+    background-color:blue;
+    
+}
