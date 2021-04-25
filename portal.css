@@ -37,6 +37,8 @@ footer{
     grid-column:3/5;
     margin:auto;
     margin-bottom:1em;
+    width:250px;
+    height:275px;
 }
 .alinks {
     grid-column:1/4;
