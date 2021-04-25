@@ -4,12 +4,13 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Assignment Portal</title>
+  <meta name="description" content="This page contains a portal with links to the various assignments in this course.">
   <link rel="stylesheet" href="portal.css">
   <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
   <script src="aportal.js"></script>
 </head>
 <div class='content'>
-  <body onload = "lastModified()">
+  <body onload = "lastModified();currentYear()">
     <div class="grid">
       <h1 class = "mainHeader">Ryker Steglich</h1>
       <img src = "https://github.com/RykerSteg/RykerSteg.github.io/blob/Assignment-Portal/IMG_20191023_105417_414.jpg?raw=true" alt = "Image of me" class = "mainImg" width = 250px height = 275px>
@@ -27,7 +28,7 @@
       </ul>
       </section>
       <footer>
-        <p>&copy; 2021 | Ryker C. Steglich | Utah | <a href="https://www.byui.edu/online">BYU-I Online Learning</a> <br>Last Updated: <span id = 'date'></span></p>
+        <p>&copy; <span id='twentyTwentyOne'></span> | Ryker C. Steglich | Utah | <a href="https://www.byui.edu/online">BYU-I Online Learning</a> <br>Last Updated: <span id = 'date'></span></p>
       </footer>
     </div>
   </body>
