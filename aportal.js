@@ -1,4 +1,10 @@
+function currentYear(){
+    const d = new Date();
+    const year = d.getFullYear();
+    document.querySelector('#twentyTwentyOne').textContent = year;
+}
+
 function lastModified(){
-const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-  document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', options);
+    const modified = document.lastModified;
+  document.getElementById('date').textContent = modified;
 }
