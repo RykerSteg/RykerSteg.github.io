@@ -16,7 +16,7 @@ h1{
     border-radius:25px;
     grid-row:1/2;
     grid-column:1/5;
-    font-family:Coda Caption;
+    font-family:"Coda Caption",serif;
 }
 h2{
     border-bottom:black 2px solid;
@@ -45,7 +45,7 @@ footer{
     grid-row:2/6;
     z-index:-1;
     margin-left:10em;
-    font-family:Roboto Slab;
+    font-family:"Roboto Slab", Helvetica, sans-serif;
 }
 .byulink {
     color:#EDFE01;
