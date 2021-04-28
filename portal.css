@@ -23,7 +23,7 @@ h2{
 }
 footer{
     border-radius:25px;
-    background-color:navy;
+    background-color:black;
     color:white;
     grid-row:6/8;
     grid-column:2/4;
@@ -51,5 +51,5 @@ footer{
     color:#EDFE01;
 }
 a {
-    color:#B71301;
+    color:#8a7371;
 }
