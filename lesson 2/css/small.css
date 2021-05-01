@@ -9,7 +9,8 @@
 footer{
     background-color:navy;
     color:white;
-    text-align:center;   
+    text-align:center; 
+    border:black solid 2px;  
 }
 footer a{
     color:yellow;
@@ -19,12 +20,14 @@ header {
     padding: 1em 2em;
     color:white;
     text-align:center;
-    font-size:1.5em;
     border: solid black 4px;
     font-family:"Coda Caption",serif;
 }
+h1{
+    font-size:3em;
+}
 h2{
-    font-size:1em;
+    font-size:2.5em;
     border-bottom:black 2px solid;
     text-align:center;
 }
@@ -32,9 +35,11 @@ h3{
     background-color:white;
     text-align:center;
     border: solid black 2px;
+    font-size:1.5em;
 }
 h4{
     text-align:center;
+    font-size:1em
 }
 img{
     padding:1em;
