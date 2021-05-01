@@ -29,8 +29,7 @@ footer{
     color:white;
     grid-row:5/6;
     grid-column:1/5;
-    text-align:center;
-    
+    text-align:center;   
 }
 .mainImg {
     border: solid black 2px;
