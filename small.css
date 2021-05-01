@@ -43,13 +43,14 @@ footer{
 .alinks {
     grid-column:1/5;
     grid-row:4/5;
-    z-index:-1;
     margin: 0 auto;
-    font-family:"Roboto Slab", Helvetica, sans-serif;
+    pointer-events:auto;
 }
 .byulink {
     color:#EDFE01;
 }
 a {
-    color:#8a7371;
+    color:orange;
+    pointer-events:auto;
+
 }
