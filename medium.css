@@ -23,9 +23,7 @@
     
     .alinks {
         grid-column:1/4;
-        grid-row:2/6;
-        z-index:-1;
-       
+        grid-row:2/6;       
     }
         
 }
