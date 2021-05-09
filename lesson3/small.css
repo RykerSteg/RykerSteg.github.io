@@ -1,0 +1,112 @@
+header h1{
+    font-size:5rem;
+}
+header, footer, main, nav{
+    max-width:920px;
+    text-align:center;
+}
+header, footer{
+    background-color:#1378d0;
+    color:#f4e409;
+    display: flex;
+	flex-flow: column;
+	align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+nav {
+    background-color:#1378d0;
+    font-size:1.25rem;
+    margin: 0 auto;
+
+}
+ul{
+    list-style-type:none;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight:bold;
+} 
+nav ul li a {
+    display: block;
+    color:#140800;
+    text-align: center;
+    text-decoration: none;
+    padding:.5em;
+}
+a:hover{
+    background-color:#cdcbcd;
+    color:#1378d0;
+}
+main{
+    padding-top:2em;
+    display:grid;
+    grid-template-columns:1fr;
+    margin:auto;
+    color:#140800;
+    background-color:#cdcbcd;
+}
+body{
+    background-color:#f4e409;
+    font-size:16px;
+}
+img{
+    margin:0 auto;
+    align-items:center;
+}
+#logoimg{
+    max-width:50%;
+}
+#paletteimg{
+    max-width:80%;    
+}
+h1{
+    font-size:3rem;
+}
+h1, h2, h3, h4, h5{
+    font-family:"Farro", Arial, Helvetica, sans-serif;
+}
+#purpose, #domainName, #audience, #personas, #primary{
+    border-bottom:5px solid #140800;
+}
+#urlLink{
+    font-size:1.1rem;
+}
+footer a{
+    color:#cdcbcd;
+}
+p{
+    margin-left:2em;
+    margin-right:2em;
+    padding-bottom:1em;
+}
+#logo{
+    margin-bottom:1em;
+}
+h3{
+    text-decoration:underline;
+}
+#Farro{
+    font-family:"Farro";
+}
+.Roboto{
+    font-family:"Roboto Slab";
+}
+p, a{
+    font-family:"Roboto Slab";
+}
+.list{
+    margin-left:1em;
+    margin-right:1em;
+    padding:0;
+}
+.list li{
+    padding:.5em;
+}
+.portrait{
+    max-width:80%;
+    padding-top:1em;
+}
