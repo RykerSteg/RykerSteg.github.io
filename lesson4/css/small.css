@@ -1,0 +1,99 @@
+header, footer{
+    background-color:#1378d0;
+    color:#f4e409;
+	align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+header{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:1em;
+}
+header img{
+    width:10rem;
+    grid-row:1/2;
+    grid-column:1/2;
+}
+header h1{
+    grid-row:1/2;
+    grid-column:2/4;
+}
+header div{
+    grid-row:2/3;
+    grid-column:2/4;
+    margin-top:-8em
+}
+nav {
+    font-size:1.25rem;
+    margin: 0 auto;
+    background-color:#1378d0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight:bold;
+} 
+nav ul li a {
+    display: block;
+    color:#140800;
+    text-align: center;
+    text-decoration: none;
+    padding:.5em;
+    border-top:#140800 2px solid;
+    height:100%;
+}
+.homeNav li:first-child {
+    display:block;
+}
+.homeNav li{
+    display:none;
+}
+.menu li {
+    display:block;
+}
+a:hover{
+    background-color:#cdcbcd;
+    color:#1378d0;
+}
+main{
+    padding-top:2em;
+    display:grid;
+    grid-template-columns:1fr;
+    margin:auto;
+    color:#140800;
+    background-color:#cdcbcd;
+}
+.placeHolder {
+    font-family:Roboto Slab;
+    font-weight:bolder;
+    background-color:#1378d0;
+    color:#cdcbcd;
+    border:#140800 solid 2px;
+    padding:1em;
+    margin:.25em;
+}
+#lastDiv{
+    margin-bottom:2em;
+}
+footer, main{
+    max-width:920px;
+    text-align:center;
+}
+footer{
+    background-color:#1378d0;
+    padding:1em;
+}
+body{
+    font-size:16px;
+    background-color:#f4e409;
+}
+h1, h2, h3, h4, h5{
+    font-family:"Farro", Arial, Helvetica, sans-serif;
+}
+footer a{
+    color:#cdcbcd;
+
+}

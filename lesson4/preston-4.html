@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Preston Town</title>
+        <meta name="description" content="This page contains the preston town page">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@500&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body onload="lastModified();currentYear();">
+        <header>
+            <img src="/Users/rykersteglich/WDD230/RykerSteg.github.io/lesson4/iconfinder_weather-13_1530380 copy.png" alt="icon for preston town weather page." id="headerImg">
+            <h1>Eye on Weather</h1>
+            <div>motto/ slogan</div>
+        </header>
+        <nav>
+            <ul class="homeNav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="placeHolder">Hero with Weather Summary</div>
+            <div class="placeHolder">5 Day Forecast</div>
+            <div class="placeHolder">Article</div>
+            <div class="placeHolder" id="lastDiv">Contact Information</div>
+        </main>
+        <footer>
+            <p>&copy; <span id='twentyTwentyOne'></span> | Ryker C. Steglich | Utah | <a class="byulink" href="https://www.byui.edu/online">BYU-I Online Learning</a> <br>Last Updated: <span id = 'date'></span></p>
+        </footer>
+        <script src="js/preston.js"></script>
+    </body>
+</html>
