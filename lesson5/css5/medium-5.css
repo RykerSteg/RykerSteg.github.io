@@ -1,0 +1,30 @@
+@media only screen and (min-width: 39em) {
+    header img{
+        width:12rem;
+        grid-column:1/2;
+        padding-left:2em
+    }
+    header{
+        font-size:1rem;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-gap:0;
+        
+    }
+    header h1{
+        grid-column:2/4;
+    }
+    header div{
+        grid-column:2/4;
+    }
+    .homeNav{
+        display:flex;
+        white-space:nowrap;
+    }
+    .homeNav li{
+        display:block;
+        flex: 1 1 100%;
+    }
+    .homeNav li:first-child{
+        display:none
+    }
+}
