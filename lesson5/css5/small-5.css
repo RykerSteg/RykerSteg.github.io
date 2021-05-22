@@ -8,7 +8,7 @@ header, footer{
 header{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-    grid-gap:1em;
+    grid-gap:2rem;
 }
 header img{
     width:10rem;
