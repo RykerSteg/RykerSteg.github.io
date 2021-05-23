@@ -13,7 +13,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body onload="lastModified();currentYear();">
+        <div id="pancakes">
+            <p><em><u>Saturday:</u></em> Preston Pancakes in the Park!<br>
+            9:00 a.m. Friday at the city park.</p>
+        </div>
         <header>
+            </div>
             <img src="iconfinder_weather-13_1530380_copy.png" alt="icon for preston town weather page." id="headerImg">
             <h1>Eye on Weather</h1>
             <div>motto/ slogan</div>
@@ -21,8 +26,7 @@
         <nav>
             <ul class="homeNav">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li class="active"><a href="preston-5.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -30,7 +34,7 @@
             </ul>
         </nav>
         <main>
-            <h2>Preston Idaho</h2>
+            <h2 id="preston">Preston Idaho</h2>
             <div id="herodiv">
                 <img src="michael-tuszynski-F3MqchhfTnI-unsplash.png" alt="Image of a town from above." class="heroImg">
                 <section class="weatherSummary">
@@ -42,7 +46,23 @@
                         <p>Wind Speed: <span id="Wind Speed">3 mph</span></p>
                 </section>
             </div>
-            <div id="forecast">5 Day Forecast</div>
+            <div id="forecast">
+                <table>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tues</th>
+                        <th>Wed</th>
+                        <th>Thurs</th>
+                    </tr>
+                    <tr>
+                        <td><img src="Sunnyicon.png" alt="sunshine icon">73 &#8457</td>
+                        <td><img src="Sunnyicon.png" alt="sunshine icon">82 &#8457</td>                 <td><img src="Sunnyicon.png" alt="sunshine icon">90 &#8457</td>
+                        <td><img src="Sunnyicon.png" alt="sunshine icon">90 &#8457</td>
+                        <td><img src="Sunnyicon.png" alt="sunshine icon">91 &#8457</td>
+                    </tr>
+                </table>
+            </div>
             <div class="article">
                 <img src="jacek-dylag-PMxT0XtQ--A-unsplash.png" alt="Image of people walking a crosswalk" id="articleImg">
                 <h3 class="articleTitle">Lorem Ipsum</h3>
@@ -52,10 +72,18 @@
             </div>
             <div id="contactInformation">
                 <h4>Eye on Weather</h4>
-                <p><i class="material-icons">location_on</i> 441N Center st.<br>
-                Preston, ID 83263</p>
-                <p><i class="material-icons">call</i> 435-555-555<br>
-                <i class="material-icons">email</i> eyeonweather@gmail.com</p>
+                <img src="prestonMap.png" alt="map of preston" class="map">
+                <section class="info">
+                    <p><i class="material-icons">location_on</i> 441N State st.<br>
+                    Preston, ID 83263</p>
+                    <p><i class="material-icons">call</i> 435-555-555<br>
+                    <i class="material-icons">email</i> eyeonweather@gmail.com</p>
+                </section>
+                <section class="social">
+                    <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook icon"></a>
+                    <a href="https://twitter.com/"><img src="twitter.png" alt="twitter icon"></a>
+                    <a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram icon"></a>
+                </section>
             </div>
         </main>
         <footer>

@@ -55,9 +55,12 @@ nav ul li a {
 .menu li {
     display:block;
 }
-a:hover{
+.homeNav a:hover{
     background-color:#cdcbcd;
     color:#1378d0;
+}
+.homeNav .active{
+    text-decoration:underline;
 }
 main{
     padding-top:2em;
@@ -71,7 +74,7 @@ main{
     margin-bottom:2em;
 }
 footer, main{
-    max-width:920px;
+    max-width:100vw;
     text-align:center;
 }
 footer{
@@ -110,7 +113,7 @@ footer a{
 }
 #articleImg{
     width:70%;
-    margin-top:3rem;
+    margin-top:1rem;
 }
 .articlePara{
     font-family:Roboto Slab, serif;
@@ -139,5 +142,13 @@ footer a{
 #contactInformation{
     background-color:#1378d08f
 }
-
+.map{
+    display:none;
+}
+#pancakes{
+    display:none;
+    background-color:#f4e409;
+    color:black;
+    text-align:center;
+}
 
