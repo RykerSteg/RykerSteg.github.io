@@ -43,3 +43,9 @@ function lastModified(){
 function toggleMenu() {
     document.getElementsByClassName("homeNav")[0].classList.toggle("menu");
 }
+
+let date = new Date()
+
+if (date.getDay() == 5){
+    document.getElementById("pancakes").style.display = "block";
+}
