@@ -12,9 +12,12 @@ button.addEventListener('click', () => {
     listItem.appendChild(deletebutton);
     deletebutton.textContent = 'X';
     list.appendChild(listItem);
-    
+
     deletebutton.addEventListener('click', function() {
         list.removeChild(listItem);
         input.focus();
+    
     })
+    input.value = "";
+    input.focus();
 })
