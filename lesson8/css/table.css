@@ -34,6 +34,7 @@ tfoot tr td{
 }
 table{
     margin:0 auto;
+    box-shadow: 8px 6px 9px #628ca6;
 }
 tr:nth-child(5) td:nth-child(3) {
     background-color: #628ca6;
