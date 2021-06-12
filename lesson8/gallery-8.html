@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Preston Town</title>
+        <meta name="description" content="This page contains the preston town page">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small-7.css">
+        <link rel="stylesheet" href="css/medium-7.css">
+        <link rel="stylesheet" href="css/large-7.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body onload="lastModified();currentYear()">
+        <div id="pancakes">
+            <p><em><u>Saturday:</u></em> Preston Pancakes in the Park!<br>
+            9:00 a.m. Friday at the city park.</p>
+        </div>
+        <header>
+            <img src="iconfinder_weather-13_1530380_copy.png" alt="icon for preston town weather page." id="headerImg">
+            <h1>Eye on Weather</h1>
+            <div>motto/ slogan</div>
+        </header>
+        <nav>
+            <ul class="homeNav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main id="galleryMain">
+            <h1>Weather Gallery</h1>
+            <section class="galleryGrid">
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="foggy.jpg" alt="fog on a hill" id="foggy">
+                    <p>Fog over the trees</p>
+                </div>
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="partlycloudy.jpg" alt="image of a partly cloudy sky." id="partlycloudy">
+                    <p>Partly cloudy over the valley and lake.</p>
+                </div>
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="snowy.jpg" alt="Snow falling on a black umbrella" id="snowy">
+                    <p>Snow falling on an umbrella.</p>
+                </div>
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="sunny.jpg" alt="Sunny skies" id="sunny">
+                    <p>Sunny skies looking down into the valley.</p>
+                </div>
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="sunnyMtn.jpg" alt="The sun shining on the mountain." id="sunnyMtn">
+                    <p>Sun shining over the mountains.</p>
+                </div>
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="thunder.jpg" id="thunder" alt="image of a thunderstorm">
+                    <p>Thunder storm in a field.</p>
+                </div>
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="windy.jpg" alt="Image of the wind blowing the grass." id="windy">
+                    <p>Wind blowing through the crops.</p>
+                </div>
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="cloudy.jpg" alt="Cloudy skies over a green hill" id="cloudy">
+                    <p>Cloudy skies over the hill.</p>
+                </div>
+                <div class="galleryimg">
+                    <img src="https://via.placeholder.com/300x300.png?text=PLACEHOLDERC/Ohttps://placeholder.com/" data-src="cold.jpg" alt="Cold frozen landscape and river." id="cold">
+                    <p>A cold view of the frozen river.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id='twentyTwentyOne'></span> | Ryker C. Steglich | Utah | <a class="byulink" href="https://www.byui.edu/online">BYU-I Online Learning</a> <br>Last Updated: <span id = 'date'></span> | <span id="lastVisited"></span></p>
+        </footer>
+        <script src="js/preston-7.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/fontload7.js"></script>
+        <script src="lazyload.js"></script>
+    </body>
+</html>
