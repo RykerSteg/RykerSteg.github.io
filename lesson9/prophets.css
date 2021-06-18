@@ -34,6 +34,10 @@ section img{
     margin:0 auto;
     box-shadow: black 0 0 10px 5px;
 }
+footer{
+    background-color:rgb(114, 114, 151);
+    color:white;
+    text-align:center; 
 @media only screen and (min-width:37.5em) {
     .cards{
         grid-template-columns: 50% 50%;
