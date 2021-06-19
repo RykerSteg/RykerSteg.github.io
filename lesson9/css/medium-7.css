@@ -1,0 +1,235 @@
+@media only screen and (min-width: 39em) {
+    header img{
+        width:12rem;
+        grid-column:1/2;
+        padding-left:2em
+    }
+    header{
+        font-size:1rem;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-gap:0;
+        
+    }
+    header h1{
+        grid-column:2/4;
+    }
+    header div{
+        grid-column:2/4;
+    }
+    .homeNav{
+        display:flex;
+        white-space:nowrap;
+    }
+    .homeNav li{
+        display:block;
+        flex: 1 1 100%;
+    }
+    .homeNav li:first-child{
+        display:none
+    }
+    #forecast{
+        display:grid;
+        grid-column:1/3;
+        grid-row:3/4;
+    }
+    table tr td img{
+        max-width:75%;
+    }
+    table{
+        width:50%;
+        margin:0 auto;
+        margin-bottom:1rem;
+    }
+    table, th, td {
+        border:1px solid black;
+    }
+    main{
+        grid-template-columns:1fr 1fr;
+        max-width:920px;
+    }
+    #preston{
+        grid-column:1/3;
+        grid-row:1/2;
+    }
+    #herodiv{
+        grid-column:1/3;
+        grid-row:2/3;
+    }
+    .article{
+        grid-column:1/3;
+        grid-row:4/5;
+    }
+    .article h3{
+        text-align:center;
+    }
+    .article img{
+        float:right;
+        margin-right:1.5rem;
+        margin-left:.5rem;
+        margin-bottom:.5rem;
+        box-shadow:8px 10px 8px;
+        max-width:50%;
+    }
+    .article p{
+        text-align:left;
+    }
+    #contactInformation{
+        grid-column:1/3;
+        grid-row:5/6;
+        display:grid;
+        padding:3rem;
+    }
+    #contactInformation .map{
+        display:block;
+        margin: 0 auto;
+    }
+    .galleryGrid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:.5em;
+    }
+    .galleryGrid img{
+        margin: 0 auto;
+    }
+    #foggy{
+        grid-column:1/2;
+        grid-row:1/2;
+    }
+    #partlycloudy{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #snowy{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #sunny{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #sunnyMtn{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #thunder{
+        grid-column: 2/3;
+        grid-row:3/4
+    }
+    #windy{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #cloudy{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #cold{
+        grid-column:1/2;
+        grid-row: 5/6;
+    }
+    .cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cards .section6{
+        grid-row:1/2;
+        grid-column:1/3;
+    }
+    .section6{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section6 h2{
+        grid-row:1/2;
+        grid-column:1/3;
+    }
+    .section6 h5{
+        grid-row:2/3;
+        grid-column:1/3;
+    }
+    .section6 .img6{
+        grid-row:3/6;
+        grid-column:1/2;
+        margin-bottom:2em;
+        margin-left:1em;
+    }
+    .section6 .founded{
+        grid-row:3/4;
+        grid-column:2/3;
+    }
+    .section6 .pop{
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+    .section6 .rainFall{
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+    .cards .section0{
+        grid-row:2/3;
+        grid-column: 1/3;
+    }
+    .section0{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section0 h2{
+        grid-row:1/2;
+        grid-column:1/3;
+    }
+    .section0 h5{
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    .section0 .img0{
+        grid-row:3/6;
+        grid-column:2/3;
+        margin-bottom:2em;
+    }
+    .section0 .founded{
+        grid-row:3/4;
+        grid-column:1/2;
+    }
+    .section0 .pop{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    .section0 .rainFall{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    .cards .section2{
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+    .section2{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section2 h2{
+        grid-row:1/2;
+        grid-column:1/3;
+    }
+    .section2 h5{
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    .section2 .img2{
+        grid-row:3/6;
+        grid-column:1/2;
+        margin-bottom:2em;
+        margin-left:1em;
+    }
+    .section2 .founded{
+        grid-row:3/4;
+        grid-column:2/3;
+    }
+    .section2 .pop{
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+    .section2 .rainFall{
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+}

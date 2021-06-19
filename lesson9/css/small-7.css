@@ -1,0 +1,248 @@
+header, footer{
+    background-color:#1378d0;
+    color:#f4e409;
+	align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+header{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:2rem;
+}
+header img{
+    width:10rem;
+    grid-row:1/2;
+    grid-column:1/2;
+}
+header h1{
+    grid-row:1/2;
+    grid-column:2/4;
+}
+header div{
+    grid-row:2/3;
+    grid-column:2/4;
+    margin-top:-8em;
+    font-weight:bold;
+}
+nav {
+    font-size:1.25rem;
+    margin: 0 auto;
+    background-color:#1378d0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight:bold;
+} 
+nav ul li a {
+    display: block;
+    color:#140800;
+    text-align: center;
+    text-decoration: none;
+    padding:.5em;
+    border-top:#140800 2px solid;
+    height:100%;
+}
+.homeNav li:first-child {
+    display:block;
+}
+.homeNav li{
+    display:none;
+}
+.menu li {
+    display:block;
+}
+.homeNav a:hover{
+    background-color:#cdcbcd;
+    color:#1378d0;
+}
+.homeNav .active{
+    text-decoration:underline;
+}
+main{
+    padding-top:2em;
+    color:#140800;
+    background-color:#cdcbcd;
+    margin:auto;
+}
+.mainPage{
+    display:grid;
+    grid-template-columns:1fr;
+}
+#lastDiv{
+    margin-bottom:2em;
+}
+footer, main{
+    max-width:100vw;
+    text-align:center;
+}
+footer{
+    background-color:#1378d0;
+    padding:1em;
+    font-weight:bold;
+}
+body{
+    font-size:16px;
+    background-color:#f4e409;
+}
+h1, h2, h3, h4, h5{
+    font-family:"Farro", Arial, Helvetica, sans-serif;
+}
+footer a{
+    color:#cdcbcd;
+
+}
+#herodiv{
+    position:relative;
+    max-width:100%;
+    margin:-2em auto;
+}
+.heroImg{
+    max-width:100%;
+    margin-bottom:1em;
+}
+#forecast{
+    display:none
+}
+.article{
+    background-color:#cdcbcd;
+    filter:brightness(85%);
+    margin:1em;
+    border:outset 5px #1378d0
+}
+#articleImg{
+    width:70%;
+    margin-top:1rem;
+}
+p {
+    font-family:"Roboto Slab", serif;
+}
+.articlePara{
+    font-family:"Roboto Slab", serif;
+    padding:2em;
+}
+.weatherSummary{
+    position:absolute;
+    top:30px;
+    left:30px;
+    background-color:#1378d0;
+    opacity:.9;
+    padding:1em;
+    font-weight:bold;
+
+}
+.weatherSummary p{
+    color:#f4e409;
+}
+.weatherSummary span{
+    color:#cdcbcd;
+}
+.weatherSummary h3{
+    color:#f4e409;
+    text-decoration:underline;
+}
+#contactInformation{
+    background-color:#1378d08f
+}
+.map{
+    display:none;
+}
+#pancakes{
+    display:none;
+    background-color:#f4e409;
+    color:black;
+    text-align:center;
+}
+.galleryGrid{
+    display:block;
+    align-items:center;
+    margin:0 auto;
+}
+.galleryGrid img {
+    margin-top:1em;
+    max-width:100%;
+    width:350px;
+}
+#galleryMain{
+    padding:1em;
+}
+img[data-src] {
+    filter:blur(.2em);
+}
+img[src] {
+    filter:blur(0em);
+    transition:filter 1s;
+}
+#galleryMain p{
+    margin-top:-.2em;
+    margin-bottom:.5em
+}
+/*--------Form---------*/
+
+form{
+    width:100%;
+    margin: 0 auto;
+    max-width:25rem;
+    padding:2em
+}
+form fieldset{
+    border:solid black 2px;
+    border-radius:4px;
+    margin: 2rem 0;
+    font-family:"Farro" ;
+    max-width: 100%;
+
+}
+form label.top{
+    display:block;
+    padding-top:1rem;
+    text-align:left;
+    
+}
+form label.top input{
+    display:block;
+    
+}
+form label.top input:required{
+    border-left:red solid 6px;
+}
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
+input{
+    border-radius:4px;
+    align-items:center;
+    max-width:100%;
+}
+#stormHead{
+    margin:0 auto;
+}
+form label.top input{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border:solid 1px #999;
+    border-radius:4px;
+    padding:.75rem;
+    color:#555;
+    width:100%;
+    max-width: 20rem;
+}
+#severity, #stormRegion{
+    margin-top:1em;
+}
+textarea{
+    margin-bottom:1em;
+}
+.cards img{
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 5px 8px 10px black;
+}
+.cards section{
+    border:3px black solid;
+    margin:1.5em
+}
