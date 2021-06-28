@@ -24,7 +24,6 @@ fetch(forecast)
     .then((jsObject) => {
         console.log(jsObject);
         const nextfive = jsObject.list.filter(dt => dt.dt_txt.includes('18:00:00'));
-        let img = 'https://openweathermap.org/img/w/';
         i = 0
         nextfive.forEach(day => {
             
@@ -33,6 +32,8 @@ fetch(forecast)
             document.getElementById(dayOfWeek).textContent = dayNames[forcast.getDay()];
             ftemp = Math.round((day.main.temp - 273.15) * (9/5) + 32);
             document.getElementById("temp" + days[i]).textContent = ftemp;
+            
+            document.getElementById("pic" + days[i]).setAttribute('src', 'https://openweathermap.org/img/w/' + day.weather[0].icon + '.png');
             i++
         })
     })
