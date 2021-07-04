@@ -245,3 +245,6 @@ textarea{
     box-shadow:5px 5px;
     padding:1em; 
 }
+.eventHeader{
+    text-decoration:underline overline #1378d08f;
+}

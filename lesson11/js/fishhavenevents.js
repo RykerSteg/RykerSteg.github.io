@@ -14,6 +14,9 @@ fetch(requestURL)
         let event = document.createElement('section');
         let h4 = document.createElement('h4');
 
+        h4.setAttribute('class', 'eventHeader');
+
+
         h4.textContent = towns[index].name + " Events";
         event.appendChild(h4);
 
