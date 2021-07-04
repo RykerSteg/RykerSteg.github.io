@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Preston Town</title>
+        <meta name="description" content="This page contains the preston town page">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small-7.css">
+        <link rel="stylesheet" href="css/medium-7.css">
+        <link rel="stylesheet" href="css/large-7.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body onload="lastModified();currentYear()">
+        <div id="pancakes">
+            <p><em><u>Saturday:</u></em> Preston Pancakes in the Park!<br>
+            9:00 a.m. Friday at the city park.</p>
+        </div>
+        <header>
+            <img src="iconfinder_weather-13_1530380_copy.png" alt="icon for preston town weather page." id="headerImg">
+            <h1>Eye on Weather</h1>
+            <div>motto/ slogan</div>
+        </header>
+        <nav>
+            <ul class="homeNav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="../lesson9/index.html">Home</a></li>
+                <li><a href="../lesson11/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="mainPage">
+            <h1 id="stormHead">Stormcenter</h1>
+           <form method="get" action="thanks.html">
+               <fieldset>
+                   <legend>User Information</legend>
+                    <label class="top">Full Name*<input type="text" id="fullname" name="fullname" placeholder="John Doe" pattern="[a-zA-Z ]{5,}" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="4355551234" pattern=".{7,}" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zip" placeholder="84745" required></label>
+               </fieldset>
+               <fieldset>
+                   <legend>Storm Information</legend>
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                    <label class="top">Storm Type
+                        <select name="stormType">
+                            <option value="">Select</option>
+                            <option value="flashFlood">FlashFlood</option>
+                            <option value="hail">Hail</option>
+                            <option value="hurricane">Hurricane</option>
+                            <option value="thunderstorm">Thunderstorm</option>
+                            <option value="tornado">Tornado</option>
+                        </select>
+                    </label>
+                    <label for="rating">Storm Severity <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="changeRating(this.value)" onchange="changeRating(this.value)">
+                    <span id="ratingValue">5</span></label>
+                    
+                    <datalist id="tickmarks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                    <br>
+                    <label for="stormRegion">Storm Region:</label>
+                    <select name="stormRegion" id="stormRegion">
+                        <option value="">Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>User In-Danger Level</legend>
+                    <label>No<input type="radio" value="no" name="dangerLevel" checked></label>
+                    <label>Maybe<input type="radio" value="maybe" name="dangerLevel"></label>
+                    <label>Yes<input type="radio" value="yes" name="dangerLevel"></label>
+                
+                    <label class="top">Additional Information<textarea name="additionalInfo" class="textarea" rows="8" cols="35"></textarea></label>
+                    <input type="submit" value="Report Storm" name="submitBtn" id="submitBtn">
+               </fieldset>
+           </form>
+        </main>
+        <footer>
+            <p>&copy; <span id='twentyTwentyOne'></span> | Ryker C. Steglich | Utah | <a class="byulink" href="https://www.byui.edu/online">BYU-I Online Learning</a> <br>Last Updated: <span id = 'date'></span> | <span id="lastVisited"></span></p>
+        </footer>
+        <script src="js/preston-7.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/fontload7.js"></script>
+    </body>
+</html>

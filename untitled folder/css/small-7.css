@@ -122,7 +122,7 @@ p {
 }
 .articlePara{
     font-family:"Roboto Slab", serif;
-    padding:1em;
+    padding:2em;
 }
 .weatherSummary{
     position:absolute;
@@ -145,8 +145,7 @@ p {
     text-decoration:underline;
 }
 #contactInformation{
-    background-color:#1378d08f;
-    margin-top:1em;
+    background-color:#1378d08f
 }
 .map{
     display:none;
@@ -237,11 +236,4 @@ form label.top input{
 }
 textarea{
     margin-bottom:1em;
-}
-.events {
-    max-width:100%;
-    text-align: center;
-    border:black 2px solid;
-    box-shadow:5px 5px;
-    padding:1em; 
 }

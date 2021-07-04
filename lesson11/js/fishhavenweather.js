@@ -1,4 +1,4 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=6cb6efbc5628616ae948fd81c0a5bd69';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=6cb6efbc5628616ae948fd81c0a5bd69';
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -18,7 +18,7 @@ fetch(apiURL)
 
 const days = ["1", "2", "3", "4", "5"];
 const dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-const forecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=6cb6efbc5628616ae948fd81c0a5bd69';
+const forecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=6cb6efbc5628616ae948fd81c0a5bd69';
 fetch(forecast)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -34,6 +34,7 @@ fetch(forecast)
             document.getElementById("temp" + days[i]).textContent = ftemp;
             
             document.getElementById("pic" + days[i]).setAttribute('src', 'https://openweathermap.org/img/w/' + day.weather[0].icon + '.png');
+            document.getElementById("pic" + days[i]).setAttribute('alt', day.weather[0].main);
             i++
         })
     })
