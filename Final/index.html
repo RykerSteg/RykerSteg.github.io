@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Chamber of Commerce</title>
+        <meta name="description" content="This is the homepage for the La Verkin Chamber of Commerce.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body onload="lastModified();currentYear()">
+        <header>
+            <h1>La Verkin Chamber of Commerce</h1>
+        </header>
+        <nav>
+            <ul class="homeNav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="laverkin.html">La Verkin</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="heroimg">
+                <picture>
+                    <source srcset="images/hero_img_med_index.jpg" media="(min-width: 39em) and (max-width: 60em)">
+                    <source srcset="images/hero_img_large_index.jpg" media="(min-width: 60em)">
+                    <img src="images/hero_img_small_index.jpg" alt="Image of a street in La Verkin looking at the mountains." class="heroImg">
+                </picture>
+            </div>
+            <div class='weather'>
+                <table>
+                    <tr>
+                        <th><span id='1'></span></th>
+                        <th><span id='2'></span></th>
+                        <th><span id='3'></span></th>
+                        <th><span id='4'></span></th>
+                        <th><span id='5'></span></th>
+                    </tr>
+                    <td><img id='pic1' src="" alt="Weather Icon"><span id='temp1'></span>&#8457;</td>
+                    <td><img id='pic2' src="" alt="Weather Icon"><span id='temp2'></span>&#8457;</td>
+                    <td><img id='pic3' src="" alt="Weather Icon"><span id='temp3'></span>&#8457;</td>
+                    <td><img id='pic4' src="" alt="Weather Icon"><span id='temp4'></span>&#8457;</td>
+                    <td><img id='pic5' src="" alt="Weather Icon"><span id='temp5'></span>&#8457</td>
+                </table>
+            </div>
+            <section id='purpose'>
+                <h2>Our Purpose</h2>
+                <p>The purpose of the La Verkin Chamber of Commerce is to support and advance its memebers businesses so that they may achieve success and in turn support the community. </p>
+            </section>
+            <section id='join'>
+                <h3>Join the Chamber of Commerce!</h3>
+                <button><a href="join.html">Click Here!</a></button>
+            </section>
+            <section id='ads'>
+                <h3>Local Ads</h3>
+                <div>
+                    <h4>Davis Food and Drug</h4>
+                    <ul>
+                        <li>Petite Sirloin Steaks: $6.49 per lb</li>
+                        <li>Tortilla Chips: $1.99 a bag</li>
+                        <li>Candy: 2/$1.00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Maverick</h4>
+                    <ul>
+                        <li>Fountain Drinks: $0.79</li>
+                        <li>Redbull: Buy 2 get 1 free</li>
+                        <li>Ben & Jerry's Pints: 2 for $11</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>The Big Chill</h4>
+                    <ul>
+                        <li>Monday: Buy 3 mediums or larges, Get one free!</li>
+                        <li>Live Music every Friday!</li>
+                        <li>Come check out our flavor of the day!</li>
+                    </ul>
+                </div>
+            </section>
+            <section id='events'>
+                <h3>Upcoming Events</h3>
+                    <div>July 24th: Pioneer Day Parade</div>
+                    <div>October 31st: Trunk or Treat</div>
+                    <div>December 3rd & 4th: Winterfest</div>
+            </section>
+            <section id='contactInfo'>
+                <h3>Contact Us!</h3>
+                <div class='contact'>
+                     
+                    <div id='phone'>Phone: (435) 705-3423</div>
+                    <div id='email'>Email: laverkincommerce@gmail.com</div>
+                    <div id='facebook'><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook logo"></a> </div>
+                    <div id='insta'><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo"></a></div>
+                    <div id='twitter'><a href="https://www.twitter.com"><img src="images/twitter.png"> </a></div>
+                 </div>   
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id='twentyTwentyOne'></span> | Ryker C. Steglich | Utah | <a class="byulink" href="https://www.byui.edu/online">BYU-I Online Learning</a> <br>Last Updated: <span id = 'date'></span> | <span id="lastVisited"></span></p>
+        </footer>
+        <script src="js/preston.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/fontload.js"></script>
+        <script src="js/weatherapi.js"></script>
+
+    </body>
+</html>
