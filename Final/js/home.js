@@ -1,52 +1,50 @@
-const requestURL = 'file:/Users/rykersteglich/WDD230/RykerSteg.github.io/Final/json/directory.json';
-
+const requestURL = 
+"https://rykersteg.github.io/Final/json/directory.json"
 fetch(requestURL)
     .then(function(response) {
         return response.json();
     })
     .then(function(jsonObject) {
         console.table(jsonObject)
-        const towns = jsonObject['towns'];
+        const directory = jsonObject['directory'];
 
-        createCard(6);
         createCard(0);
+        createCard(1);
         createCard(2);
+        createCard(3);
+        createCard(4);
+        createCard(5);
+        createCard(6);
+        createCard(7);
 
 
 function createCard(index){
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
-    let h5 = document.createElement('h5');
 
-    h2.textContent = towns[index].name;
-    h5.textContent = towns[index].motto;
+    h2.textContent = directory[index].name;
+    h2.setAttribute('class', 'header' + index);
 
     card.appendChild(h2);
-    card.appendChild(h5);
 
     let portrait = document.createElement('img');
 
-    portrait.setAttribute('src', "images/" + towns[index].photo);
-    portrait.setAttribute('alt', towns[index].name);
+    portrait.setAttribute('src', "images/" + directory[index].logo);
+    portrait.setAttribute('alt', directory[index].name);
     portrait.setAttribute('class', 'img' + index);
 
     card.appendChild(portrait);
 
-    let founded = document.createElement('p');
-    let population = document.createElement('p');
-    let rainFall = document.createElement('p');
+    let website = document.createElement('a');
+    website.href = directory[index].website;
+    website.innerHTML = directory[index].website;
+    website.setAttribute('class', 'web' + index);
 
-    founded.textContent = "Founded: " + towns[index].yearFounded;
-    population.textContent = "Population: " + towns[index].currentPopulation;
-    rainFall.textContent = "Average Rainfall: " + towns[index].averageRainfall;
+    card.appendChild(website);
 
-    founded.setAttribute('class', 'founded');
-    population.setAttribute('class', 'pop');
-    rainFall.setAttribute('class', 'rainFall')
-
-    card.appendChild(founded);
-    card.appendChild(population);
-    card.appendChild(rainFall);
+    let contact = document.createElement('p');
+    contact.textContent = directory[index].contact;
+    contact.setAttribute('class', 'contact' + index);
 
     card.setAttribute('class', 'section' + index)
     document.querySelector('div.cards').appendChild(card);
