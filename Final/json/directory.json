@@ -1,0 +1,51 @@
+{
+    'directory':[
+        {
+        "name": "Davis Food and Drug",
+        "logo": "davis.jpg",
+        "website": "https://davisfoodanddrug.com"
+        },
+        {
+            "name": "Maverik",
+            "logo": "maverik.jpg",
+            "website": "https://maverik.com",
+            "contact": "1-800-789-4455"
+        },
+        {
+            "name": "Vitalpax",
+            "logo": "vp.jpg",
+            "website": "https://vitalpax.com",
+            "contact": "1(866)VITAL88"
+        },
+        {
+            "name": "LV Swiss",
+            "logo": "swiss.jpg",
+            "website": "https://www.lvswiss.com/",
+            "contact": "(435)635-1482"
+        },
+        {
+            "name": "Stage Coach Grille",
+            "logo": "stagecoach.jpg",
+            "website": "https://thestagecoachgrille.com",
+            "contact": "(435)635-7400"
+        },
+        {
+            "name": "Dr. Howard DDS",
+            "logo": "howard.jpg",
+            "website": "https://www.hughhowarddds.com",
+            "contact": "(435)635-4244"
+        },
+        {
+            "name": "Southern Snow",
+            "logo": "snow.jpg",
+            "website": "https://southernsnow.com",
+            "contact": "(504)393-8967"
+        },
+        {
+            "name": "The Big Chill",
+            "logo": "chill.jpg",
+            "website": "https://the-big-chill.business.site",
+            "contact": ""
+        }
+    ]
+}

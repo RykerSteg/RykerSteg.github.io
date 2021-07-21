@@ -1,0 +1,14 @@
+@media only screen and (min-width: 39em) {
+  .homeNav {
+      display:flex;
+      white-space: nowrap;
+  }
+  .homeNav li {
+      display:block;
+      flex: 1 1 100%;
+  }
+  .homeNav li:first-child{
+      display:none;
+  }
+    
+}

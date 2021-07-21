@@ -1,0 +1,172 @@
+main{
+    max-width:920px;
+    margin:0 auto;
+    background-color:#EEE0CB;
+    text-align:left;
+    
+}
+body{
+    background-color: #EEE0CB;
+}
+ul{
+    list-style-type: none;
+}
+section{
+    background-color:#383B53;
+    color:#EEE0CB;
+    margin-bottom: 2em;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:.5em;
+    max-width:500px;
+}
+header,footer{
+    background-color:#A44A3F;
+    color:#EEE0CB;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    font-weight: bold;
+}
+nav ul li a{
+    display:block;
+    background-color:#839788;
+    color:#383B53;
+    text-align: center;
+    padding:.5em;
+    height:100%;
+    text-decoration:none;
+    font-family:"Crimson Text";
+}
+nav ul li a:hover{
+    background-color: #383B53;
+    color:#839788;
+}
+.homeNav li:first-child{
+    display:block;
+}
+.homeNav li {
+    display:none;
+}
+.menu li{
+    display:block;
+}
+#join{
+    align-content: center;
+    background-color: #839788;
+}
+ button{
+     margin-left: 1em; 
+     margin-top:1em;  
+}
+.active{
+    text-decoration: underline;
+}
+h1,h2,h3,h5{
+    border-bottom:solid #A44A3F 2px;
+    background-color: #839788;
+    padding:2em;
+    margin:auto;
+    font-family:"Encode Sans";
+}
+.heroimg{
+    text-align: center;
+}
+p, a, section div{
+    padding:1em;
+    font-family: "Crimson Text";
+}
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.contact #phone{
+    grid-row:2/3;
+    grid-column:1/3
+}
+.contact #email{
+    grid-row:3/4;
+    grid-column:1/3;
+}
+.contact #facebook{
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+.contact #insta{
+    grid-row:5/6;
+    grid-column: 2/3;
+}
+.contact #twitter{
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+table{
+    width:50%;
+    margin:1em auto;
+
+}
+table,th,td{
+    border:1px solid black;
+}
+/* --Join.html-- */
+form{
+    width:100%;
+    max-width: 25rem;
+    max-width: 100%;
+}
+form fieldset{
+    border:solid black 2px;
+    font-family:'Crimson Text';
+}
+form label.above{
+    display:block;
+    padding-top: 1rem;
+    text-align:left;
+}
+form label.above input{
+    -webkit-appearance: none;
+    display:block;
+    font-size:1rem;
+    border:solid 1px #999;
+    border-radius: 4px;
+    padding:.75rem;
+    color:#555;
+    width:90%;
+    max-width: 100%;
+}
+form label input:required{
+    border-left: red solid 5px;
+}
+form label input:required:valid{
+    border-left: green solid 5px;
+}
+input{
+    border-radius:4px;
+    max-width: 100%;
+}
+#joinHead{
+    margin:1em auto;
+    color:#EEE0CB;
+}
+legend{
+    font-size:1.5rem;
+}
+textarea{
+    display:block;
+}
+#joinButton{
+    margin:1em;
+    font-size: 1.1rem;
+}
+#key{
+    padding:2em;
+}
+#key ul li{
+    margin:1em;
+}
+/*-- --*/

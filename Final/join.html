@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Join the Chamber</title>
+        <meta name="description" content="This is the homepage for the La Verkin Chamber of Commerce.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body onload="lastModified();currentYear()">
+        <header>
+            <h1>La Verkin Chamber of Commerce</h1>
+        </header>
+        <nav>
+            <ul class="homeNav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laverkin.html">La Verkin</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1 id='joinHead'>Join the Chamber</h1>
+            <form method='get' action='submit.html'>
+                <fieldset>
+                    <legend>Member Information</legend>
+                    <label class="above">First Name*<input type='text' id='firstname' name='firstname' placeholder='John' pattern='[a-zA-Z ]{5,}' required></label>
+                    <label class='above'>Last Name*<input type='text' id='lastname' name='lastname' placeholder='Doe' pattern='[a-zA-Z ]{3,}' required></label>
+                    <label class='above'>Title<input type='text' id='title' name='title' placeholder="Mr."</label>
+                    <label class='above'>Email*<input type='email' name='email' placeholder="someone@gmail.com" required></label>
+                    <label class='above'>Cell Phone<input type='tel' name='phone' placeholder='4356785423' pattern='.{7,}'</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class='above'>Business Name*<input type='text' id='business' name='business' required></label>
+                    <label class='above'>Business Address<input type='text' id='address' name='address'></label>
+                    <label class='above'>Business Website<input type='url' id='website' name='website'></label>
+                    <label class='above'>Description of Business<textarea name='description' class='textarea' rows='11' cols='40'></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <label class='above'>
+                        Membership Type
+                        <select name='membershipType'>
+                            <option value=''>Select</option>
+                            <option value='non-profit'>Non-profit($100)</option>
+                            <option value='bronze'>Bronze($200)</option>
+                            <option value='silver'>Silver($400)</option>
+                            <option value='gold'>Gold($1000)</option>
+                        </select>
+                    </label>
+                    <input type='submit' value='Join' name='joinButton' id='joinButton'> 
+                </fieldset>
+            </form>
+            <div id='key'>
+                <h4>Membership Key</h4>
+                <ul>
+                    <li>Non-Profit: Membership in the Chamber of Commerce with a listing on the directory</li>
+                    <li>Bronze: Membership, directory listing, luncheon tickets, and social media posts.</li>
+                    <li>Silver: All the benefits of Bronze, plus business trainings</li>
+                    <li>Gold: All the benefits of Silver, plus sponsorship and advertising.</li>
+                </ul>
+            </div>
+        </main>
+        <footer>    
+            <p>&copy; <span id='twentyTwentyOne'></span> | Ryker C. Steglich | Utah | <a class="byulink" href="https://www.byui.edu/online">BYU-I Online Learning</a> <br>Last Updated: <span id = 'date'></span> | <span id="lastVisited"></span></p>
+        </footer>
+        <script src="js/preston.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/fontload.js"></script>
+
+    </body>
+</html>
