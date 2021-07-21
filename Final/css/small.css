@@ -60,9 +60,12 @@ nav ul li a:hover{
     align-content: center;
     background-color: #839788;
 }
- button{
+button{
      margin-left: 1em; 
      margin-top:1em;  
+}
+#join button a{
+    color:black;
 }
 .active{
     text-decoration: underline;
@@ -76,6 +79,9 @@ h1,h2,h3,h5{
 }
 .heroimg{
     text-align: center;
+}
+.heroImg{
+    max-width: 100%;
 }
 p, a, section div{
     padding:1em;
@@ -169,4 +175,39 @@ textarea{
 #key ul li{
     margin:1em;
 }
-/*-- --*/
+/*-- directory --*/
+section a{
+    color:#EEE0CB;
+    margin:0 auto;
+    display:block;
+    text-align: center;
+}
+.web6, .web7,.section6, .section7{
+    background-color: #839788;
+}
+.header6, .header7{
+    text-align: center;
+    border:none;
+}
+.img6, .img7{
+    display:none;
+}
+section img{
+    max-width:100%;
+    text-align: center;
+    display:block;
+    margin:0 auto;
+}
+.header0, .header1, .header2, .header3, .header4, .header5{
+    display:none;
+}
+/*--Contact.html--*/
+iframe{
+    max-width: 100%;
+    display:block;
+    margin:0 auto;
+}
+.contactForm{
+    margin-top:1em;
+    margin-bottom:1em;
+}
