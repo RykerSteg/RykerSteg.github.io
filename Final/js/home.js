@@ -46,6 +46,8 @@ function createCard(index){
     contact.textContent = directory[index].contact;
     contact.setAttribute('class', 'contact' + index);
 
+    card.appendChild(contact)
+    
     card.setAttribute('class', 'section' + index)
     document.querySelector('div.cards').appendChild(card);
 }
