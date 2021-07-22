@@ -18,7 +18,7 @@ section{
     margin-left:auto;
     margin-right:auto;
     padding-bottom:.5em;
-    max-width:500px;
+    max-width:100%;
 }
 header,footer{
     background-color:#A44A3F;
@@ -76,6 +76,7 @@ h1,h2,h3,h5{
     padding:2em;
     margin:auto;
     font-family:"Encode Sans";
+    color:#EEE0CB;
 }
 .heroimg{
     text-align: center;
@@ -93,11 +94,11 @@ p, a, section div{
 }
 .contact #phone{
     grid-row:2/3;
-    grid-column:1/3
+    grid-column:1/4
 }
 .contact #email{
     grid-row:3/4;
-    grid-column:1/3;
+    grid-column:1/4;
 }
 .contact #facebook{
     grid-row: 5/6;
@@ -111,6 +112,9 @@ p, a, section div{
     grid-row: 5/6;
     grid-column: 3/4;
 }
+.main .contact div img{
+    min-width: 40%;
+} 
 table{
     width:50%;
     margin:1em auto;
@@ -182,6 +186,10 @@ section a{
     display:block;
     text-align: center;
 }
+.cards p{
+    display:block;
+    text-align: center;
+}
 .web6, .web7,.section6, .section7{
     background-color: #839788;
 }
@@ -201,6 +209,13 @@ section img{
 .header0, .header1, .header2, .header3, .header4, .header5{
     display:none;
 }
+#directHead{
+    margin-bottom:1em;
+    margin-top:1em;
+}
+.cards section:hover{
+    box-shadow: 4px 5px 5px black;
+}
 /*--Contact.html--*/
 iframe{
     max-width: 100%;
@@ -210,4 +225,14 @@ iframe{
 .contactForm{
     margin-top:1em;
     margin-bottom:1em;
+}
+/*--la verkin--*/
+.events div{
+    padding:1em;
+}
+#demographics p{
+    margin:-.5em;
+}
+.bottomimg{
+    max-width: 100%;
 }
