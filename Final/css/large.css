@@ -42,7 +42,7 @@
         grid-column:2/3;
     }
     #contactInfo .contact #email{
-        padding-left:-1em;
+        padding-left:1em;
     }
     iframe{
        grid-row:6/7;
@@ -63,6 +63,7 @@
        margin:0;
        margin-bottom:2em;
    }
+
    /*--directory--*/
    .cards{
        grid-template-columns: 1fr 1fr 1fr;
